@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thục hành 03</title>
+  </head>
+  <body>
+    <script>
+      // let grid;
+      // grid =
+      //   "<table border = '1' width ='300' cellspacing='3' style='border-collapse: collapse'>";
+      // for (i = 1; i <= 10; i++) {
+      //   grid = grid + "<tr>";
+      //   for (j = 1; j <= 10; j++) {
+      //     grid = grid + "<td>" + i * j + "</td>";
+      //   }
+      //   grid = grid + "</tr>";
+      // }
+      // grid = grid + "</table>";
+      // document.write(grid);
+      let grid, i, j;
+      grid =
+        "<table border = '1' width ='300' cellspacing='3' style='border-collapse: collapse'>";
+      i = j = 1;
+      while (i <= 10) {
+        grid = grid + "<tr>";
+        while (j <= 10) {
+          grid = grid + "<td>" + i * j + "</td>";
+          j++;
+        }
+        grid = grid + "</tr>";
+        j = 1;
+        i++;
+      }
+      document.write(grid);
+    </script>
+  </body>
+</html>
